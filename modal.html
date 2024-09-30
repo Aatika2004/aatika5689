@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+    <style>
+        .checked {
+          color: brown;
+        }
+
+        body {
+           background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex justify-content-between">
+        <div>
+            <h1 style="color: rgb(29, 145, 173);">PRODUCT</h1>
+        </div>
+        <div>
+            <nav class="navbar bg-DARK">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="search product" aria-label="search">
+                    </form>
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="btn btn-outline-dark">category</button>
+
+                    </div>
+                </div>
+            </nav>
+            <div class="d-flex justify-content-between">
+                <button type="button" class="btn btn-primary">category</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center mt-5">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width:18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">sofa</h5>
+                        <h5>$40</h5>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal"
+                            data-bs-target="exampleModal">
+                            add to cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="card" style="width:18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">bed</h5>
+                        <h5>$100</h5>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal"
+                            data-bs-target="exampleModal">
+                            add to cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="card" style="width:18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">furniture</h5>
+                        <h5>$150</h5>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal"
+                            data-bs-target="exampleModal">
+                            add to cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Modal body text goes here.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                document.getElementById("add").addEventListener("click", function () {
+                    var name = document.getElementsByClassName("card-title");
+                    var price = document.getElementsByClassName("pr-2");
+                    if (name || price) {
+                        document.getElementById(`userdetails`).innerHTML = `
+                    <p>name:$(name)</p>
+                    <p?name:$(name)</p>`;
+
+                    }
+                })
+            </script>
+
+</body>
+
+</html>

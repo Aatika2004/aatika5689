@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Add to Cart</h2>
+    <div id="userDetails">
+    </div>
+
+    <script>
+        //retrieve user details from local storage
+        const name = localStorage.getitem(`userName`);
+        const email = localStorage.getItem(`userEmail`);
+
+        //display user details
+        if (name && email){
+            document.getElementById(`userDetails`).innerHTML = `
+            <P>Name:${name}</p>
+        }
+    </script>
+</body>
+</html>
